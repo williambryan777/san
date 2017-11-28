@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/san/img/favicon.ico" type="image/x-icon" />
+  
+  <title>San</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="San">
+<meta property="og:url" content="http://ecomfe.github.io/practice/index.html">
+<meta property="og:site_name" content="San">
+<meta property="og:updated_time" content="2017-11-28T14:50:34.029Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="San">
+  
+    <link rel="alternate" href="/atom.xml" title="San" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+
+  <link rel="stylesheet" href="/san/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/san/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/san/css/style.css">
+  <link rel="stylesheet" href="/san/css/site.css">
+  <link rel="stylesheet" href="/san/css/article.css">
+  <link rel="stylesheet" href="/san/css/code.css">
+  
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?fe8285f51c25503f85b1082c854a41e0";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+  <!-- search -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+
+
+</head>
+
+<body style="background: #01222d;">
+  <div class="body-inner">
+  <header>
+    <a href="/san/" class="logo-s-link">
+        <img height="80" src="/san/img/logo.svg" class="logo-s" alt="LOGO" title="San">
+        </a>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+
+    <div class="header-content">
+        <nav class="header-content-nav">
+        <div class="search-input">
+        <style type="text/css">
+      /*  #san-query-input {
+            background-color: red;
+        }*/
+            #san-query-input::-webkit-input-placeholder{
+            　　color: #000 !important;
+            　　}
+        </style>
+         <input type="text" id="san-query-input" placeholder="Search" class="search-query st-default-search-input"/>
+                    <svg t="1502693727354" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1431" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><defs><style type="text/css"></style></defs><path d="M817.243 742.793l152.765 153.11-76.72 76.547-152.765-153.11zM685.498 258.674c-118.486-118.541-310.63-118.541-429.171 0-118.542 118.542-118.542 310.686 0 429.172 54.911 54.928 130.781 88.903 214.586 88.903 83.804 0 159.674-33.977 214.585-88.903 54.928-54.913 88.903-130.782 88.903-214.587 0-83.804-33.977-159.674-88.903-214.585zM190.258 753.915c-71.856-71.838-116.303-171.092-116.303-280.727 0-219.233 177.723-396.956 396.956-396.956s396.956 177.723 396.956 396.956c0 109.635-44.446 208.89-116.302 280.726-71.833 71.814-171.057 116.229-280.656 116.229s-208.822-44.415-280.656-116.229l0.003 0.001z" p-id="1432"></path></svg>
+                 </div>   
+            <ul>
+     
+                <li><a class="router" href="/san/">HOME</a>
+                <li><a class="router" href="/san/tutorial/start/">教程</a>
+                <li><a class="router" href="/san/example/">示例</a>
+                <li><a class="router" href="/san/doc/api/">API</a>
+                <li><a class="router" href="https://github.com/ecomfe/san" class="github" target="_blank">
+                    <embed src="/san/img/github2.svg" width="20" height="20" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/"></embed>
+                </a>
+                <li>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript">
+    var Input = document.getElementById('san-query-input');
+    var Icon = document.getElementsByClassName('icon')[0];
+    docsearch({
+        apiKey: '1c360e1f2503c4fa59ea3d28e3b8f6b3',
+        indexName: 'san',
+        inputSelector: '#san-query-input',
+        debug: false // Set debug to true if you want to inspect the dropdown
+    });
+</script>
+  <style>
+#practice-search {
+    width: 600px;
+    height: 30px;
+    padding: .5rem;
+    font-size: 1.4rem;
+    display: block;
+    margin: 2rem auto;
+}
+
+.practice dl {
+    width: 80rem;
+    margin: 2rem auto;
+}
+
+.practice dt {
+    padding: 2rem 0 1rem;
+    font-size: 1.8rem;
+    color: #295892;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.practice dd {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #295892;
+    border-bottom: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    background: #f6f6f6;
+    padding: .2rem .5rem;
+}
+
+.practice dd:hover {
+    background: #fff;
+}
+
+.practice a:link,
+.practice a:visited {
+    color: #5a7d96;
+    text-decoration: none;
+}
+</style>
+
+<main class="practice">
+<input type="text" id="practice-search">
+<dl id="practice-list">
+    <dt>数据</dt>
+    <dd><a href="/san/practice/data-valid/">什么东西可以保存在 data 里？</a></dd>
+    <dd><a href="/san/practice/data-invalid/">什么东西不要保存在 data 里？</a></dd>
+    <dd><a href="/san/practice/auto-camel/">data bind 时的 auto camel</a></dd>
+
+    <dt>视图模板</dt>
+    <dd><a href="/san/practice/traverse-object/">如何遍历一个对象？</a></dd>
+    <dd><a href="/san/practice/array-deep-updates-trigger-view/">数组深层更新如何触发视图更新？</a></dd>
+    <dd><a href="/san/practice/how-to-show-or-hide-an-element">如何实现元素的显示/隐藏？</a></dd>
+
+    <dt>组件间通信</dt>
+    <dd><a href="/san/practice/parent-to-child/">父组件如何更新子组件？</a></dd>
+    <dd><a href="/san/practice/child-to-parent/">子组件如何通知父组件？</a></dd>
+    <dd><a href="/san/practice/child-to-grandparent/">子组件与更高层的组件如何通信？</a></dd>
+    <dd><a href="/san/practice/dynamic-parent-child/">动态子组件如何传递消息给父组件?</a></dd>
+
+    <dt>组件管理</dt>
+    <dd><a href="/san/practice/can-we-use-dom/">我们可以操作 DOM 吗？</a></dd>
+    <!-- <dd><a href="/san/practice/position-absolute-dom/">如何处理绝对定位组件的 DOM？</a></dd> -->
+
+    <dt>路由管理</dt>
+    <dd><a href="/san/practice/san-router-spa/">如何使用 san-router 建立一个单页应用的后台系统？</a></dd>
+
+    <dt>应用状态管理</dt>
+    <dd><a href="/san/practice/san-store-spa/">如何使用 san-store 实现后台系统的状态管理？</a></dd>
+
+    <!-- <dt>DevTool</dt>
+
+    <dt>应用状态管理</dt> -->
+    <dt>FAQ</dt>
+    <dd><a href="/san/practice/question-and-answer/">Q&A集锦</a></dd>
+</dl>
+</main>
+
+<script>
+(function () {
+    var searchEl = document.getElementById('practice-search');
+    var timeout;
+    searchEl.onkeyup = function () {
+        if (timeout) {
+            clearTimeout(timeout);
+        }
+
+        timeout = setTimeout(doSearch, 500);
+    };
+
+    function doSearch() {
+        var key = searchEl.value;
+        var dds = document.getElementById('practice-list').getElementsByTagName('dd');
+        var len = dds.length;
+
+        while (len--) {
+            var dd = dds[len];
+            dd.style.display = key && dd.getElementsByTagName('a')[0].innerHTML.indexOf(key) < 0
+                ? 'none' : '';
+        }
+    }
+})();
+</script>
+
+      <div class="footer-copyright">
+        &copy; 2017 <a target="_blank" href="http://efe.baidu.com">Baidu EFE</a>
+    </div>
+</div>
+
+<div class="mobile-nav-dimmer"></div>
+<div class="mobile-nav">
+    <ul class="mobile-nav-header">
+        <li><a href="/san/">HOME</a>
+        <li><a href="/san/tutorial/start/">教程</a>
+        <li><a href="/san/example/">示例</a>
+        <li><a href="/san/doc/api/">API</a>
+        <li><a href="https://github.com/ecomfe/san" class="github" target="_blank">Github
+        </a></li>
+    </ul>
+    <aside class="mobile-nav-recommend">    <dl>
+        <dt>教程</dt>
+        <dd><a href="/san/tutorial/setup/">安装</a></dd>
+        <dd><a href="/san/tutorial/background/">背景</a></dd>
+        <dd><a href="/san/tutorial/start/">开始</a></dd>
+        <dd><a href="/san/tutorial/data-binding/">数据绑定</a></dd>
+        <dd><a href="/san/tutorial/data-method/">数据操作</a></dd>
+        <dd><a href="/san/tutorial/data-checking/">数据校验</a></dd>
+        <dd><a href="/san/tutorial/style/">样式</a></dd>
+        <dd><a href="/san/tutorial/if/">条件</a></dd>
+        <dd><a href="/san/tutorial/for/">循环</a></dd>
+        <dd><a href="/san/tutorial/event/">事件处理</a></dd>
+        <dd><a href="/san/tutorial/form/">表单</a></dd>
+        <dd><a href="/san/tutorial/component/">组件</a></dd>
+        <dd><a href="/san/tutorial/reverse/">组件反解</a></dd>
+        <dd><a href="/san/tutorial/ssr/">服务端渲染</a></dd>
+
+        <dt>了解更多</dt>
+        <dd><a href="/san/doc/api/">组件 API</a></dd>
+        <dd><a href="/san/doc/main-members/">主模块 API</a></dd>
+        <dd><a href="https://github.com/ecomfe/san/blob/master/doc/anode.md" target="_blank">ANode DOC</a></dd>
+        <dd><a href="https://github.com/ecomfe/san/tree/master/dist" target="_blank">发布版本说明</a></dd>
+        <dd><a href="https://github.com/ecomfe/san/blob/master/CHANGELOG.md" target="_blank">版本更新日志</a></dd>
+
+        <dt>周边</dt>
+        <dd><a href="https://ecomfe.github.io/san-mui/" target="_blank">san-mui</a></dd>
+        <dd><a href="https://github.com/ecomfe/san-router" target="_blank">san-router</a></dd>
+        <dd><a href="https://github.com/ecomfe/san-store" target="_blank">san-store</a></dd>
+        <dd><a href="https://github.com/ecomfe/san-update" target="_blank">san-update</a></dd>
+
+        <dt>示例</dt>
+        <dd><a href="https://github.com/ecomfe/san/tree/master/example/start" target="_blank">一些小示例</a></dd>
+        <dd><a href="https://github.com/ecomfe/san/tree/master/example/todos-amd" target="_blank">Todos (AMD)</a></dd>
+        <dd><a href="https://github.com/ecomfe/san/tree/master/example/todos-esnext" target="_blank">Todos (ESNext)</a></dd>
+        <dd><a href="https://github.com/ecomfe/san-store/tree/master/example/todos" target="_blank">Todos (单向流)</a></dd>
+    </dl>
+
+</aside>
+</div>
+
+
+
+
+  </div>
+  <script src="/san/js/layout_control.js"></script>
+</body>
+</html>
